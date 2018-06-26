@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+from __future__ import print_function
 from dice import *
 from db import *
 import sys, readchar, os, sqlite3
@@ -19,8 +20,8 @@ while True:
         dice1.speak()
         print(str(dice2.roll()) + ' ', end='')
         dice2.speak()
-        #if numberRolls == 3 and (dice1.result == dice2.result):
-        #    os.execv(__file__, sys.argv)
+        # if numberRolls == 3 and (dice1.result == dice2.result):
+        #     os.execv(__file__, sys.argv)
         connection = sqlite3.connect("/tmp/pythonDices.db")
         cursor = connection.cursor()
         sql = "INSERT INTO tosses VALUES(" + str(dice1.result) + "," + str(dice2.result) + ")"
