@@ -1,7 +1,7 @@
 import pygame
 from random import randint
 
-class dice:
+class Dice:
     def __init__(self):
         pygame.mixer.init()
 
@@ -13,5 +13,4 @@ class dice:
         pygame.mixer.music.load(str(self.result) + 'se.wav')
         pygame.mixer.music.play()
         while pygame.mixer.music.get_busy() == True:
-           continue
-
+            continue
