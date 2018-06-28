@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from __future__ import print_function
 from dice import *
 from db import *
@@ -46,3 +47,5 @@ while True:
 
     if readchar.readkey() == 'E':
         exit(0)
+    # elif readchar.readkey() == 'N':
+    #     os.execv(sys.executable, ['python'] + sys.argv)
