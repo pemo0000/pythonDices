@@ -24,7 +24,7 @@ class Toss:
 
     def print(self):
         if not self.number:
-            print(str(self.dice1.result) + ',' + str(self.dice2.result))
+            print(str(self.dice1.result) + ',' + str(self.dice2.result) + " Pasch in initial roll. Rolling again..." + '\n')
         elif self.number & 1:
             print(str((self.number+2) >>1) + '\t', end='')
             print(str(self.dice1.result) + ' ', end='')
